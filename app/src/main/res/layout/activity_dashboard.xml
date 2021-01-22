@@ -14,9 +14,9 @@
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:elevation="0dp"
             android:background="@drawable/button_border"
             android:theme="@style/ThemeOverlay.AppCompat.Light"
+            app:elevation="0dp"
             app:layout_scrollFlags="scroll|enterAlways">
 
             <androidx.cardview.widget.CardView
@@ -54,37 +54,39 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="2dp"
                     android:background="@drawable/text_boundary_background"
+                    android:drawableStart="@drawable/ic_pin"
                     android:hint="@string/enter_pincode_here"
                     android:inputType="number"
                     android:maxLength="6"
                     android:maxLines="1"
-                    android:visibility="visible"
-                    android:drawableStart="@drawable/ic_pin"
                     android:padding="6dp"
                     android:textAlignment="center"
                     android:textColor="#001900"
                     android:textColorHint="#9F000000"
                     android:textSize="19sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
                 <TextView
                     android:id="@+id/pinResult"
                     android:layout_width="185dp"
                     android:layout_height="39dp"
                     android:layout_marginStart="10dp"
-                    android:background="@drawable/text_boundary_background"
                     android:layout_marginTop="2dp"
-                    android:visibility="gone"
+                    android:background="@drawable/text_boundary_background"
                     android:text="PIN Confirmed\nChange"
                     android:textAlignment="center"
                     android:textColor="#000"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
                 <ImageView
                     android:id="@+id/offers"
                     android:layout_width="100dp"
                     android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
                     android:layout_marginStart="40dp"
                     android:layout_marginEnd="50dp"
-                    android:layout_alignParentEnd="true"
                     android:background="@drawable/button_border"
                     android:src="@drawable/offer" />
 
@@ -120,9 +122,9 @@
 
         <FrameLayout
             android:id="@+id/FrameLayout"
-            android:layout_marginTop="0dp"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:layout_marginTop="0dp"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
